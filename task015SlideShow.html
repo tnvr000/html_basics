@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Task 15 Image Carausel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/task015.css">
+</head>
+
+<body>
+	<div class="slide-container">
+		<div class="slide fade">
+			<div class="numbertext">1 / 4</div>
+			<img src="img/img001.jpg" style="width:100%">
+			<div class="text">caption text</div>
+		</div>
+
+		<div class="slide fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="img/img002.jpg" style="width:100%">
+			<div class="text">caption text</div>
+		</div>
+
+		<div class="slide fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="img/img003.jpg" style="width:100%">
+			<div class="text">caption text</div>
+		</div>
+
+		<div class="slide fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="img/img004.jpg" style="width:100%">
+			<div class="text">caption text</div>
+		</div>
+
+		<a class="prev" onclick="pushSlide(-1)">&#10094</a>
+		<a class="next" onclick="pushSlide(1)" >&#10095</a>
+	</div>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<spam class="dot" onclick="currentSlide(2)"></spam>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	<script src="js/task015.js"></script>
+</body>
+</html>

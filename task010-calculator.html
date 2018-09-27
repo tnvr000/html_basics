@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/Task010.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="content">
+			<div id="main-label">
+				CALCULATOR
+			</div>
+			<div id="inputs">
+				<input type="text" class="exp" id="txt-exp" name="txt-exp" value="0" disabled>
+				<input type="text" class="result" id="txt-result" name="txt-result" value="0" disabled>
+			</div>
+			<div id="button-row-1" class="row">
+				<input type="button" class="btn" id="btn-7" value="7" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-8" value="8" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-9" value="9" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-clear" value="<" onclick="typeThis(this, 4)">
+			</div>
+			<div id="button-row-2" class="row">
+				<input type="button" class="btn" id="btn-4" value="4" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-5" value="5" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-6" value="6" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-addition" value="+" onclick="typeThis(this, 2)">
+			</div>
+			<div id="button-row-3" class="row">
+				<input type="button" class="btn" id="btn-1" value="1" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-2" value="2" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-3" value="3" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn-subtraction" value="-" onclick="typeThis(this, 2)">
+			</div>
+			<div id="button-row-4" class="row">
+				<input type="button" class="btn" id="btn-dot" value="." onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn0" value="0" onclick="typeThis(this, 0)">
+				<input type="button" class="btn" id="btn" value="C" onclick="typeThis(this, 4)">
+				<input type="button" class="btn" id="btn-multiplication" value="*" onclick="typeThis(this, 2)">
+			</div>
+			<div id="button-row-5" class="row">
+				<input type="button" id="btn-square" class="btn" value="x2" onclick="typeThis(this, 1)">
+				<input type="button" id="btn-power" class="btn" value="^" onclick="typeThis(this, 2)">
+				<input type="button" id="btn-remainder" class="btn" value="%" onclick="typeThis(this, 2)">
+				<input type="button" id="btn-division" class="btn" value="/" onclick="typeThis(this, 2)">
+			</div>
+			<div id="button-row-6" class="row">
+				<input type="button" id="btn-equals" class="btn" value="=" onclick="typeThis(this, 3)">
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/Task010Calculator.js"></script>
+</html>

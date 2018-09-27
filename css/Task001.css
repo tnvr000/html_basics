@@ -1,0 +1,42 @@
+.main {
+  position:relative;
+  height:400px;
+  width:400px;
+  background-color:black;
+}
+
+.topLeft {
+  position:absolute;
+  top:0;
+  left:0;
+  height:50px;
+  width:50px;
+  background-color:red;
+}
+
+.topRight {
+  position:absolute;
+  top:0;
+  right:0;
+  height:50px;
+  width:50px;
+  background-color:red;
+}
+
+.bottomLeft {
+  position:absolute;
+  bottom:0;
+  left:0;
+  height:50px;
+  width:50px;
+  background-color:red
+}
+      	
+.bottomRight {
+  position:absolute;
+  bottom:0;
+  right:0;
+  height:50px;
+  width:50px;
+  background-color:red
+}

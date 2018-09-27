@@ -1,0 +1,25 @@
+html,
+body {
+	height: 100%;
+}
+.flex-container {
+	height: 500px;
+	display:flex;
+	background-color:blue;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:stretch;
+	align-content: center;
+	overflow-y: auto;
+}
+.flex-container div {
+	margin:5px 5px;
+	height:100px;
+	width:100px;
+	background-color:white;
+	color:blue;
+	font-family:verdana;
+	font-size:50px;
+	text-anchor: middle;
+	text-align: center;
+}
