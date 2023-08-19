@@ -1,0 +1,136 @@
+:root {
+    --bg-color: #ffffff;
+    --bg-secondary-color: #f3f3f3;
+    --color-primary: #E34C26;
+    --color-secondary: #F06529;
+    --color-accent: #fff;
+    --color-lightGrey: #d2d6dd;
+    --color-grey: #747681;
+    --color-darkGrey: #3f4144;
+    --color-error: #d43939;
+    --color-success: #28bd14;
+    --font-size: 1.6rem;
+    --font-color: #111111;
+    --font-color-secondary: #838383;
+}
+
+body.dark {
+    --bg-color: #000000;
+    --bg-secondary-color: #242424;
+    --font-color: #eeeeee;
+    --font-color-secondary: #838383;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.splash-container {
+    background: var(--color-primary);
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash {
+    width: 80%;
+    min-width: 350px;
+    height: 50%;
+    text-align: center;
+}
+
+.splash-head {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    border-radius: 5px;
+    line-height: 1em;
+    padding: 1em 1.6em;
+}
+
+.splash-subhead {
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 64em) {
+    .splash-head {
+        font-size: 2.4em;
+    }
+
+    .splash-subhead {
+        font-size: 1.5em;
+    }
+}
+
+
+.content-wrapper {
+    min-width: 500px;
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: var(--bg-color);
+    color: var(--font-color)
+}
+
+.projects {
+    background: var(--bg-color);
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects .project {
+    background: var(--bg-secondary-color);
+    padding: 10px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px -5px var(--color-primary);
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.projects .project:hover {
+    box-shadow: 7px 7px 5px -3px var(--color-primary);
+}
+
+.projects .project h3 {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.footer {
+    background: var(--bg-secondary-color);
+    color: var(--font-color-secondary);
+    width: 100%;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-primary)
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: var(--color-secondary)
+}
+
+.is-center {
+    text-align: center;
+}
