@@ -1,56 +1,62 @@
 html,
 body {
-	height:100%;
-	margin:0;
+	height: 100%;
+	margin: 0;
 }
+
 .left-sidebar {
-	background-color:#111;
-	height:100%;
-	left:0;
-	overflow-x:hidden;
-	padding-top:20px;
-	position:fixed;
-	top:0;
-	width:160px;
-	z-index:1;
+	background-color: #111;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	width: 160px;
+	z-index: 1;
 }
+
 .left-sidebar a {
-	color:#818181;
-	display:block;
-	font-size:25px;
-	padding:6px 8px 6px 16px;
-	text-decoration:none;
+	color: #818181;
+	display: block;
+	font-size: 25px;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
 }
+
 .left-sidebar a:hover {
-	color:#f1f1f1;
+	color: #f1f1f1;
 }
 
 .right-sidebar {
-	background-color:#eee;
-	height:auto;
-	right:10px;
-	overflow-x:hidden;
-	padding-top:8px 0;
-	position:fixed;
-	top:10px;
-	width:160px;
-	z-index:1;
+	background-color: #eee;
+	height: auto;
+	right: 10px;
+	overflow-x: hidden;
+	padding-top: 8px 0;
+	position: fixed;
+	top: 10px;
+	width: 160px;
+	z-index: 1;
 }
+
 .right-sidebar a {
-	color:#2196f3;
-	display:block;
-	font-size:25px;
-	padding:6px 8px 6px 16px;
-	text-decoration:none;
+	color: #2196f3;
+	display: block;
+	font-size: 25px;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
 }
+
 .right-sidebar a:hover {
-	color:#064579;
+	color: #064579;
 }
+
 .main {
-	box-sizing:border-box;
-	font-size:25px;
-	height:100%;
-	margin:0 180px 0 160px;
+	box-sizing: border-box;
+	font-size: 25px;
+	height: 100%;
+	margin: 0 180px 0 160px;
 	overflow: auto;
-	padding:10px 10px;
+	padding: 10px 10px;
 }
