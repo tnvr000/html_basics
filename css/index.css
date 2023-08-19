@@ -1,6 +1,6 @@
 :root {
     --bg-color: #ffffff;
-    --bg-secondary-color: #f3f3f3;
+    --bg-secondary-color: #f0f0f0;
     --color-primary: #E34C26;
     --color-secondary: #F06529;
     --color-accent: #fff;
@@ -12,6 +12,8 @@
     --font-size: 1.6rem;
     --font-color: #111111;
     --font-color-secondary: #838383;
+    --font-family-sans: sans-serif;
+    --font-family-mono: monaco, "Consolas", "Lucida Console", monospace
 }
 
 body.dark {
@@ -23,6 +25,7 @@ body.dark {
 
 body {
     background: var(--bg-color);
+    font-family: var(--font-family-sans);
 }
 
 .splash-container {
@@ -40,7 +43,6 @@ body {
 }
 
 .splash {
-    width: 80%;
     min-width: 350px;
     height: 50%;
     text-align: center;
@@ -75,14 +77,14 @@ body {
 
 
 .content-wrapper {
-    min-width: 500px;
     position: absolute;
     top: 87%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
     background: var(--bg-color);
-    color: var(--font-color)
+    color: var(--font-color);
+    margin: 0;
 }
 
 .projects {
@@ -92,16 +94,18 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    text-align: center;
 }
 
 .projects .project {
     background: var(--bg-secondary-color);
     padding: 10px;
-    width: 450px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 7px 7px 5px -5px var(--color-primary);
     text-decoration: none;
     color: var(--font-color);
+    letter-spacing: 0.05em;
 }
 
 .projects .project:hover {
