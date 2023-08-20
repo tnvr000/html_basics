@@ -6,25 +6,25 @@ var ready = (callback) => {
   }
 };
 
-var imgSun = 'img/sun.svg';
-var imgMoon = 'img/moon.svg';
+var imgSun = 'img/sun.svg#sun';
+var imgMoon = 'img/moon.svg#moon';
 
 ready(() => {
   imgMode = document.getElementById('imgMode');
   if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add('dark');
-    imgMode.src = imgMoon;
+    imgMode.children[0].href.baseVal = imgMoon;
     imgMode.dataset.mode = 'dark';
   }
 
-  imgMode.onclick = (e) => {
-    ele = e.target;
+  imgMode.onclick = () => {
+    ele = document.getElementById('imgMode');
     if(ele.dataset.mode === 'dark') {
-      ele.src = imgSun;
+      ele.children[0].href.baseVal = imgSun;
       ele.dataset.mode = 'light';
       document.body.classList.remove('dark');
     } else {
-      ele.src = imgMoon;
+      ele.children[0].href.baseVal = imgMoon;
       ele.dataset.mode = 'dark';
       document.body.classList.add('dark');
     }
